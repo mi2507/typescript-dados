@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TypeScript Dados</title>
+  <style>
+    body {
+      font-size: 1.25rem;
+      font-family: sans-serif;
+      margin: 2rem;
+    }
+
+    h2 {
+      border-top: 4px solid #5e1a1a;
+      border-bottom: 4px solid #5e1a1a;
+      padding: 1rem 1rem;
+      text-align: center;
+    }
+
+    p {
+      margin-left: 1rem;
+    }
+    #pagamento, #status {
+      display: flex; 
+      justify-content: left;
+    }
+
+    
+    #tabela {
+      display: flex;
+      justify-content: center;
+    }
+
+    .table {
+      border-spacing: 0;
+      text-align: left;
+      width: 100%;
+    }
+
+    table th,
+    table td {
+      padding: 0.5rem 1rem;
+      border-bottom: 1px solid #5e1a1a;
+    }
+
+    table tr:nth-child(even) {
+      background-color: #fcefef;
+    }
+
+   
+
+    
+
+  </style>
+</head>
+
+<body>
+  <h2>Estatistica</h2>
+  <p id="total"> Total: <span></span></p>
+  <div id="pagamento">
+    <p>Pagamento: <span id="pagamento"></span></p>
+  </div>
+  <div id="status">
+ <p>Status: <span id="status"></span></p>
+  </div>
+
+    <p id="dia"> Dia com mais vendas: <span></span></p>
+  
+  <h2>Dados das Transações</h2>
+  <div id="tabela">
+  <table id="transacoes">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>Compra</th>
+        <th>Pagamento</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    </div>
+    <tbody>
+
+    </tbody>
+    <script type="module" src="./dist/script.js"></script>
+</body>
+
+</html>
